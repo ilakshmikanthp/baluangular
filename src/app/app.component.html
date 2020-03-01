@@ -1,9 +1,65 @@
-<div class="example-container">
-  <mat-form-field>
-    <input matInput placeholder="Input">
-  </mat-form-field>
+<!-- 
+<mat-grid-list cols="3">
+  <mat-grid-tile> <app-layout></app-layout></mat-grid-tile>
+  <mat-grid-tile [colspan]="2"><router-outlet></router-outlet></mat-grid-tile>
 
-  <mat-form-field>
-    <textarea matInput placeholder="Textarea"></textarea>
-  </mat-form-field>
+  
+  <mat-grid-list cols="12">
+    <mat-grid-tile
+      colspan="2"
+    >1</mat-grid-tile>
+    <mat-grid-tile
+      colspan="10"
+    >
+    <div class="example-container">
+      <mat-form-field>
+        <mat-label>Select1</mat-label>
+        <mat-select>
+            <mat-option value="option">Option</mat-option>
+          </mat-select>
+      </mat-form-field>
+  
+      <mat-form-field>
+        <mat-label>Select</mat-label>
+        <mat-select>
+            <mat-option value="option">Option</mat-option>
+          </mat-select>
+      </mat-form-field>
+  
+      <mat-form-field>
+        <input matInput placeholder="Input">
+      </mat-form-field>
+    
+      <mat-form-field>
+        <textarea matInput placeholder="Textarea"></textarea>
+      </mat-form-field>
+    </div>
+    </mat-grid-tile>
+  </mat-grid-list>
+  
+  
+  
+ -->
+ <mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <!--  <span>HOME</span> -->
+     <span class="spacer"></span>
+     
+  </mat-toolbar-row>
+</mat-toolbar>
+ <div class="container-fluid">
+  
+  <div class="row">
+    <div class="col-sm-2">
+      <a mat-button routerLink="/create">create</a>
+      <br/>
+      <a mat-button routerLink="/add">Add</a>    </div>
+    <div class="col-sm-10">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
 </div>
+
+ 
+
+ 
